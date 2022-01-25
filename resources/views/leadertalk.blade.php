@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <meta name="description" content="QUOTE - Request a quote for every type of companies">
-    <meta name="author" content="Ansonika">
-    <title>QUOTE - Request a quote for every type of companies</title>
+    <meta name="description" content="LeaderTalk - Lắng nghe, Trao đổi, Trả lời, Giải quyết">
+    <meta name="author" content="Sweetsica">
+    <title>LeaderTalk - Lắng nghe, Trao đổi, Trả lời, Giải quyết</title>
 
     <!-- Favicons-->
     <link rel="shortcut icon" href="{{asset('assets/img/favicon.ico')}}" type="image/x-icon">
@@ -40,13 +40,13 @@
 
 <header>
     <div id="logo_home">
-        <h1><a href="index.html" title="Quote">Quote - Request a quote for every type of companies</a></h1>
+        <h1><a href="index.html" title="Quote">LeaderTalk - Lắng nghe, Trao đổi, Trả lời, Giải quyết</a></h1>
     </div>
 
     <a id="menu-button-mobile" class="cmn-toggle-switch cmn-toggle-switch__htx" href="javascript:void(0);"><span>Menu mobile</span></a>
     <nav class="main_nav">
         <ul class="nav nav-tabs">
-            <li><a href="#tab_1" data-toggle="tab">Request a quote</a></li>
+            <li><a href="#tab_1" data-toggle="tab">Đặt câu hỏi</a></li>
             <li><a href="#tab_2" data-toggle="tab">About</a></li>
             <li><a href="#tab_3" data-toggle="tab">Contact</a></li>
         </ul>
@@ -54,8 +54,8 @@
 </header><!-- /header -->
 
 <div class="intro_txt animated fadeInUp">
-    <h2>Welcome to Quote</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit qui voluptatum enim est deserunt assumenda, aspernatur quam aperiam!</p>
+    <h2>Chào mừng tới LeaderTalk Mastertran</h2>
+    <p>Nơi tổng hợp các ý kiến giúp các đồng chí Lãnh đạo - TP lắng nghe, trao đổi, trả lời, giải quyết những tâm tư, nguyện vọng chính đáng!</p>
 </div><!-- /intro_txt -->
 
 <video id="my-video" class="video" loop muted autoplay playsinline>
@@ -80,7 +80,7 @@
                     <div class="subheader" id="quote"></div>
                     <div class="row">
                         <aside class="col-xl-3 col-lg-4">
-                            <h2>Request a Quote and Compare prices!</h2>
+                            <h2>Để lại câu hỏi cho các bộ phận quản lý</h2>
                             <p class="lead">An mei sadipscing dissentiet, eos ea partem viderer facilisi.</p>
                             <ul class="list_ok">
                                 <li>Delicata persecuti ei nec, et his minim omnium, aperiam placerat ea vis.</li>
@@ -100,25 +100,25 @@
                                     <input id="website" name="website" type="text" value=""><!-- Leave for security protection, read docs for details -->
                                     <div id="middle-wizard">
                                         <div class="step">
-                                            <h3 class="main_question"><strong>1/4</strong>What is your budget?</h3>
+                                            <h3 class="main_question"><strong>1/4</strong>Vấn đề của bạn thuộc phòng ban nào phụ trách?</h3>
 
                                             <div class="form-group radio_questions">
-                                                <label>1. My budget is under $500
+                                                <label>1. Marketing
                                                     <input name="question_1" type="radio" value="My budget is under $500" class="icheck required">
                                                 </label>
                                             </div>
                                             <div class="form-group radio_questions">
-                                                <label>2. My budget is between $500 and $1000
+                                                <label>2. Dịch vụ bán hàng
                                                     <input name="question_1" type="radio" value="My budget is between $500 and $1000" class="icheck required">
                                                 </label>
                                             </div>
                                             <div class="form-group radio_questions">
-                                                <label>3. My budget is between $1000 and $1500
+                                                <label>3. Kế toán
                                                     <input name="question_1" type="radio" value="My budget is between $1000 and $1500" class="icheck required">
                                                 </label>
                                             </div>
                                             <div class="form-group radio_questions">
-                                                <label>4. My budget is over $1500
+                                                <label>4. Khác
                                                     <input name="question_1" type="radio" value="My budget is over $1500" class="icheck required">
                                                 </label>
                                             </div>
@@ -126,7 +126,7 @@
                                         </div><!-- /step 1-->
 
                                         <div class="step">
-                                            <h3 class="main_question"><strong>2/4</strong>What your poject need?</h3>
+                                            <h3 class="main_question"><strong>2/4</strong>Vấn đề bạn đang gặp phải?</h3>
 
                                             <div class="row add_bottom_30">
 
@@ -141,19 +141,10 @@
                                                             <input name="question_2[]" type="checkbox" value="Web site design" class="icheck required">Web site design
                                                         </label>
                                                     </div>
-                                                    <div class="form-group checkbox_questions">
-                                                        <label>
-                                                            <input name="question_2[]" type="checkbox" value="Seo optimization" class="icheck required">Seo optimization
-                                                        </label>
-                                                    </div>
                                                 </div>
 
                                                 <div class="col-sm-6">
-                                                    <div class="form-group checkbox_questions">
-                                                        <label>
-                                                            <input name="question_2[]" type="checkbox" value="CMS integrations (Wordpress)" class="icheck required">CMS integrations (Wordpress)
-                                                        </label>
-                                                    </div>
+
                                                     <div class="form-group checkbox_questions">
                                                         <label>
                                                             <input name="question_2[]" type="checkbox" value="Domain registration" class="icheck required">Domain registration
@@ -168,49 +159,47 @@
                                                 </div>
                                             </div><!-- /row-->
                                             <div class="form-group textarea_info">
-                                                <label>Additional info</label>
-                                                <textarea name="addtional_info" class="form-control" style="height:150px;" placeholder="How many pages, other details, etc..."></textarea>
+                                                <label>Vấn đề khác</label>
+                                                <textarea name="addtional_info" class="form-control" style="height:150px;" placeholder="Vui lòng ghi rõ..."></textarea>
                                             </div>
                                         </div><!-- /step 2-->
 
                                         <div class="step">
-                                            <h3 class="main_question"><strong>3/4</strong>Please answer the following questions:</h3>
+                                            <h3 class="main_question"><strong>3/4</strong>Vui lòng bổ sung các thông tin sau</h3>
 
                                             <div class="row">
 
                                                 <div class="col-lg-10">
                                                     <div class="form-group select">
-                                                        <label>If you already have an hosting plan, please define:</label>
+                                                        <label>Bạn đánh giá mức độ cấp thiết của vấn đề này như nào?</label>
                                                         <div class="styled-select">
                                                             <select class="required" name="select_1">
-                                                                <option value="" selected>Select</option>
-                                                                <option value="Unix/Linux + Mysql">Unix/Linux + Mysql</option>
-                                                                <option value="Windows + Sql">Windows + Sql</option>
-                                                                <option value="Other">Other</option>
+                                                                <option value="" selected>-Chọn-</option>
+                                                                <option value="Unix/Linux + Mysql">1</option>
+                                                                <option value="Windows + Sql">2</option>
+                                                                <option value="Other">3</option>
                                                             </select>
                                                         </div>
                                                     </div><!-- /select-->
 
                                                     <div class="form-group select">
-                                                        <label>If you need an hosting plan, please define which one:</label>
+                                                        <label>Bạn có phương án giải quyết không?</label>
                                                         <div class="styled-select">
                                                             <select class="required" name="select_2">
-                                                                <option value="" selected>Select</option>
-                                                                <option value="Hosting Plan 1 year + Mysql database 500MB">1 year + Mysql database 500MB</option>
-                                                                <option value="Hosting Plan 2 year + Mysql database 500MB">2 year + Mysql database 500MB</option>
-                                                                <option value="Hosting Plan 2 year + Mysql database 1GB">2 year + Mysql database 1GB</option>
+                                                                <option value="" selected>-Chọn-</option>
+                                                                <option value="Hosting Plan 1 year + Mysql database 500MB">Có</option>
+                                                                <option value="Hosting Plan 2 year + Mysql database 500MB">Không</option>
                                                             </select>
                                                         </div>
                                                     </div><!-- /select-->
 
                                                     <div class="form-group select">
-                                                        <label>If you need a newsletter campaign, please define the provider you prefer:</label>
+                                                        <label>Bạn muốn gửi kiến nghị ẩn danh hay không?</label>
                                                         <div class="styled-select">
                                                             <select class="required" name="select_3">
-                                                                <option value="" selected>Select</option>
-                                                                <option value="Mailchimp">Mailchimp</option>
-                                                                <option value="CampaignMonitor">CampaignMonitor</option>
-                                                                <option value="MailUp">MailUp</option>
+                                                                <option value="" selected>-Chọn-</option>
+                                                                <option value="Mailchimp">Có</option>
+                                                                <option value="CampaignMonitor">Không</option>
                                                             </select>
                                                         </div>
                                                     </div><!-- /select-->
@@ -220,37 +209,37 @@
 
                                         <div class="submit step">
 
-                                            <h3 class="main_question"><strong>4/4</strong>Please fill with your details</h3>
-
+                                            <h3 class="main_question"><strong>4/4</strong>Vui lòng điền thông tin sau để hoàn tất:</h3>
+                                            <p><i>*Dữ liệu hoàn toàn được bảo mật, việc cung cấp thông tin sử dụng để chống spam và người ngoài lợi dụng hệ thống. Các bộ phận ngoài kĩ thuật không thể truy cập</i></p>
                                             <div class="row">
 
                                                 <div class="col-sm-6">
                                                     <div class="form-group">
-                                                        <input type="text" name="company_name" class="form-control" placeholder="Your company name">
+                                                        <input type="text" name="company_name" class="form-control" placeholder="Tên công ty của bạn">
                                                     </div>
                                                     <div class="form-group">
-                                                        <input type="text" name="firstname" class="required form-control" placeholder="First name">
+                                                        <input type="text" name="firstname" class="required form-control" placeholder="Họ">
                                                     </div>
                                                     <div class="form-group">
-                                                        <input type="text" name="lastname" class="required form-control" placeholder="Last name">
+                                                        <input type="text" name="lastname" class="required form-control" placeholder="Tên">
                                                     </div>
                                                 </div><!-- /col-sm-6 -->
 
                                                 <div class="col-sm-6">
                                                     <div class="form-group">
-                                                        <input type="email" name="email" class="required form-control" placeholder="Your Email">
+                                                        <input type="email" name="email" class="required form-control" placeholder="Địa chỉ email">
                                                     </div>
                                                     <div class="form-group">
-                                                        <input type="text" name="telephone" class="required form-control" placeholder="Your Telephone">
+                                                        <input type="text" name="telephone" class="required form-control" placeholder="Số điện thoại">
                                                     </div>
                                                     <div class="form-group">
                                                         <div class="styled-select">
                                                             <select class="required" name="country">
-                                                                <option value="" selected>Select your country</option>
-                                                                <option value="Europe">Europe</option>
-                                                                <option value="Asia">Asia</option>
-                                                                <option value="North America">North America</option>
-                                                                <option value="South America">South America</option>
+                                                                <option value="" selected>Thuộc bộ phận</option>
+                                                                <option value="Europe">Marketing</option>
+                                                                <option value="Asia">Sale</option>
+                                                                <option value="North America">Accountant</option>
+                                                                <option value="South America">Khác</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -282,7 +271,7 @@
                     <div class="subheader" id="about"></div>
                     <div class="row">
                         <div class="col-lg-8">
-                            <h2>Welcome to Quote</h2>
+                            <h2>Chào mừng đến với LeaderTalk Mastertran</h2>
                             <p class="lead">An mei sadipscing dissentiet, eos ea partem viderer facilisi. Brute nostrud democritum in vis, nam ei erat zril mediocrem. No postea diceret vix. Mei eu scripta dolorum voluptatibus, id omnes repudiare pri.</p>
 
                             <div class="row">
@@ -446,8 +435,8 @@
                                 <div class="box_contact">
                                     <i class="pe-7s-map-marker"></i>
                                     <h4>Address</h4>
-                                    <p>Duo magna vocibus electram ad. Sit an amet aeque legimus, paulo mnesarchum et mea, et pri quodsi singulis.</p>
-                                    <p>11 Fifth Ave - New York, 45 001238 - USA</p>
+                                    <p>Văn phòng giao dịch.</p>
+                                    <p>Tầng 06, tháp A, tòa nhà Central Point số 219 Trung Kính, Phường Yên Hòa, Quận Cầu Giấy, TP Hà Nội</p>
                                     <a href="https://www.google.com/maps/dir//11+5th+Ave,+New+York,+NY+10003,+Stati+Uniti/@40.7322935,-73.9981148,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x89c25990b3af8bb9:0x854ae1d3553155!2m2!1d-73.9959261!2d40.7322935!3e0" class="btn_1" target="_blank">Get directions</a>
                                 </div>
                             </div>
@@ -455,21 +444,21 @@
                                 <div class="box_contact">
                                     <i class="pe-7s-mail-open-file"></i>
                                     <h4>Email and website</h4>
-                                    <p>Duo magna vocibus electram ad. Sit an amet aeque legimus, paulo mnesarchum et mea, et pri quodsi singulis.</p>
+                                    <p>Vui lòng liên hệ trong giờ hành chính để được xử lý nhanh nhất.</p>
                                     <p>
-                                        <strong>Email:</strong> <a href="#0">support@domain.com</a><br>
-                                        <strong>Website:</strong> <a href="#0">www.quote.com</a>
+                                        <strong>Email:</strong> <a href="#0">baonn@doppelherz.vn</a><br>
+                                        <strong>Website:</strong> <a href="#0">https://doppelherz.vn</a>
                                     </p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="box_contact">
                                     <i class="pe-7s-call"></i>
-                                    <h4>Telephone</h4>
-                                    <p>Duo magna vocibus electram ad. Sit an amet aeque legimus, paulo mnesarchum et mea, et pri quodsi singulis.</p>
+                                    <h4>Thông tin</h4>
+                                    <p>0105381169 Giấy phép: Đăng ký thay đổi lần thứ 8, ngày 28 tháng 12 năm 2021</p>
                                     <p>
-                                        <strong>Tel:</strong> <a href="#0">+44 543 53433</a><br>
-                                        <strong>Fax:</strong> <a href="#0">+44 543 5322</a>
+                                        <strong>Tel:</strong> <a href="#0">+18001770</a><br>
+                                        <strong>Fax:</strong> <a href="#0">+18001770</a>
                                     </p>
                                 </div>
                             </div>
@@ -493,8 +482,8 @@
 
 <div id="additional_links">
     <ul>
-        <li>© 2018 Quote</li>
-        <li><a href="#0" class="animated_link">Purchase this template</a></li>
+        <li>© 2022 Sweetsica</li>
+        <li><a href="https://zalo.me/0327350489" class="animated_link">Liên hệ tác giả</a></li>
         <li><a href="index_2.html" class="animated_link">Demo Slider</a></li>
         <li><a href="index_3.html" class="animated_link">With UPLOAD</a></li>
         <li><a href="index_4.html" class="animated_link"><With></With> Branch</a></li>
