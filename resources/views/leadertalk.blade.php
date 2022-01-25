@@ -59,9 +59,9 @@
 </div><!-- /intro_txt -->
 
 <video id="my-video" class="video" loop muted autoplay playsinline>
-    <source src="media/demo.mp4" type="video/mp4">
-    <source src="media/demo.ogv" type="video/ogg">
-    <source src="media/demo.webm" type="video/webm">
+    <source src="{{asset('assets/media/demo.mp4')}}" type="video/mp4">
+    <source src="{{asset('assets/media/demo.ogv')}}" type="video/ogg">
+    <source src="{{asset('assets/media/demo.webm')}}" type="video/webm">
 </video><!-- /video -->
 <div class="video_fallback"></div>
 
