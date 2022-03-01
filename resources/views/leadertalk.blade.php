@@ -97,6 +97,7 @@
                                 </div><!-- /top-wizard -->
 
                                 <form name="example-1" id="wrapped" method="POST" action="{{route('send.question')}}">
+                                    @csrf
                                     <input id="website" name="website" type="text" value=""><!-- Leave for security protection, read docs for details -->
                                     <div id="middle-wizard">
                                         <div class="step">
