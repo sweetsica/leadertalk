@@ -47,8 +47,8 @@
     <nav class="main_nav">
         <ul class="nav nav-tabs">
             <li><a href="#tab_1" data-toggle="tab">Đặt câu hỏi</a></li>
-            <li><a href="#tab_2" data-toggle="tab">About</a></li>
-            <li><a href="#tab_3" data-toggle="tab">Contact</a></li>
+            <li><a href="#tab_2" data-toggle="tab">Về chúng tôi</a></li>
+            <li><a href="#tab_3" data-toggle="tab">Liên hệ</a></li>
         </ul>
     </nav>
 </header><!-- /header -->
@@ -96,7 +96,7 @@
                                     <div id="progressbar"></div>
                                 </div><!-- /top-wizard -->
 
-                                <form name="example-1" id="wrapped" method="POST">
+                                <form name="example-1" id="wrapped" method="POST" action="{{route('send.question')}}">
                                     <input id="website" name="website" type="text" value=""><!-- Leave for security protection, read docs for details -->
                                     <div id="middle-wizard">
                                         <div class="step">
@@ -104,22 +104,22 @@
 
                                             <div class="form-group radio_questions">
                                                 <label>1. Marketing
-                                                    <input name="question_1" type="radio" value="My budget is under $500" class="icheck required">
+                                                    <input name="category" type="radio" value="My budget is under $500" class="icheck required">
                                                 </label>
                                             </div>
                                             <div class="form-group radio_questions">
                                                 <label>2. Dịch vụ bán hàng
-                                                    <input name="question_1" type="radio" value="My budget is between $500 and $1000" class="icheck required">
+                                                    <input name="category" type="radio" value="My budget is between $500 and $1000" class="icheck required">
                                                 </label>
                                             </div>
                                             <div class="form-group radio_questions">
                                                 <label>3. Kế toán
-                                                    <input name="question_1" type="radio" value="My budget is between $1000 and $1500" class="icheck required">
+                                                    <input name="category" type="radio" value="My budget is between $1000 and $1500" class="icheck required">
                                                 </label>
                                             </div>
                                             <div class="form-group radio_questions">
                                                 <label>4. Khác
-                                                    <input name="question_1" type="radio" value="My budget is over $1500" class="icheck required">
+                                                    <input name="category" type="radio" value="My budget is over $1500" class="icheck required">
                                                 </label>
                                             </div>
 
@@ -127,57 +127,26 @@
 
                                         <div class="step">
                                             <h3 class="main_question"><strong>2/4</strong>Vấn đề bạn đang gặp phải?</h3>
-
-                                            <div class="row add_bottom_30">
-
-                                                <div class="col-sm-6">
-                                                    <div class="form-group checkbox_questions">
-                                                        <label>
-                                                            <input name="question_2[]" type="checkbox" value="Custom interface and layout" class="icheck required">Custom interface and layout
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-group checkbox_questions">
-                                                        <label>
-                                                            <input name="question_2[]" type="checkbox" value="Web site design" class="icheck required">Web site design
-                                                        </label>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-sm-6">
-
-                                                    <div class="form-group checkbox_questions">
-                                                        <label>
-                                                            <input name="question_2[]" type="checkbox" value="Domain registration" class="icheck required">Domain registration
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-group checkbox_questions">
-                                                        <label>
-                                                            <input name="question_2[]" type="checkbox" value="Hosting plan" class="icheck required">Hosting plan
-                                                        </label>
-                                                    </div>
-
-                                                </div>
-                                            </div><!-- /row-->
                                             <div class="form-group textarea_info">
-                                                <label>Vấn đề khác</label>
+                                                <label>Mô tả vấn đề</label>
                                                 <textarea name="addtional_info" class="form-control" style="height:150px;" placeholder="Vui lòng ghi rõ..."></textarea>
                                             </div>
                                         </div><!-- /step 2-->
 
                                         <div class="step">
-                                            <h3 class="main_question"><strong>3/4</strong>Vui lòng bổ sung các thông tin sau</h3>
+                                            <h3 class="main_question"><strong>3/4</strong>Thông tin bổ sung</h3>
 
                                             <div class="row">
 
                                                 <div class="col-lg-10">
                                                     <div class="form-group select">
-                                                        <label>Bạn đánh giá mức độ cấp thiết của vấn đề này như nào?</label>
+                                                        <label>Tự đánh giá mức độ khẩn cấp cho vấn đề: (1 bình thường - 3 nghiêm trọng)</label>
                                                         <div class="styled-select">
-                                                            <select class="required" name="select_1">
+                                                            <select class="required" name="level_problem">
                                                                 <option value="" selected>-Chọn-</option>
-                                                                <option value="Unix/Linux + Mysql">1</option>
-                                                                <option value="Windows + Sql">2</option>
-                                                                <option value="Other">3</option>
+                                                                <option value="Bình thường">1</option>
+                                                                <option value="Quan trọng">2</option>
+                                                                <option value="Nghiêm trọng">3</option>
                                                             </select>
                                                         </div>
                                                     </div><!-- /select-->
@@ -209,37 +178,31 @@
 
                                         <div class="submit step">
 
-                                            <h3 class="main_question"><strong>4/4</strong>Vui lòng điền thông tin sau để hoàn tất:</h3>
-                                            <p><i>*Dữ liệu hoàn toàn được bảo mật, việc cung cấp thông tin sử dụng để chống spam và người ngoài lợi dụng hệ thống. Các bộ phận ngoài kĩ thuật không thể truy cập</i></p>
+                                            <h3 class="main_question"><strong>4/4</strong>Hoàn tất thông tin:</h3>
+                                            <p><i>*Nếu bạn chọn đăng ẩn danh, có thể bỏ qua bước này</i></p>
                                             <div class="row">
 
                                                 <div class="col-sm-6">
                                                     <div class="form-group">
-                                                        <input type="text" name="company_name" class="form-control" placeholder="Tên công ty của bạn">
+                                                        <input type="text" name="lastname" class=" form-control" placeholder="Tên">
                                                     </div>
                                                     <div class="form-group">
-                                                        <input type="text" name="firstname" class="required form-control" placeholder="Họ">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <input type="text" name="lastname" class="required form-control" placeholder="Tên">
+                                                        <input type="text" name="telephone" class=" form-control" placeholder="Số điện thoại">
                                                     </div>
                                                 </div><!-- /col-sm-6 -->
 
                                                 <div class="col-sm-6">
                                                     <div class="form-group">
-                                                        <input type="email" name="email" class="required form-control" placeholder="Địa chỉ email">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <input type="text" name="telephone" class="required form-control" placeholder="Số điện thoại">
+                                                        <input type="email" name="email" class=" form-control" placeholder="Địa chỉ email">
                                                     </div>
                                                     <div class="form-group">
                                                         <div class="styled-select">
-                                                            <select class="required" name="country">
+                                                            <select name="country">
                                                                 <option value="" selected>Thuộc bộ phận</option>
-                                                                <option value="Europe">Marketing</option>
-                                                                <option value="Asia">Sale</option>
-                                                                <option value="North America">Accountant</option>
-                                                                <option value="South America">Khác</option>
+                                                                <option value="Marketing">Marketing</option>
+                                                                <option value="Sale">Sale</option>
+                                                                <option value="Accountant">Accountant</option>
+                                                                <option value="Other">Khác</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -248,7 +211,7 @@
 
                                             <div class="form-group checkbox_questions">
                                                 <input name="terms" type="checkbox" class="icheck required" value="yes">
-                                                <label>Please accept <a href="#" data-toggle="modal" data-target="#terms-txt">terms and conditions</a> ?
+                                                <label>Tôi đồng ý với <a href="#" data-toggle="modal" data-target="#terms-txt">điều khoản và quy định</a> của công ty Mastertran.
                                                 </label>
                                             </div>
 
@@ -256,9 +219,9 @@
 
                                     </div><!-- /middle-wizard -->
                                     <div id="bottom-wizard">
-                                        <button type="button" name="backward" class="backward">Backward </button>
-                                        <button type="button" name="forward" class="forward">Forward</button>
-                                        <button type="submit" name="process" class="submit">Submit</button>
+                                        <button type="button" name="backward" class="backward">Trở lại </button>
+                                        <button type="button" name="forward" class="forward">Tiếp</button>
+                                        <button type="submit" name="process" class="submit">Gửi kiến nghị</button>
                                     </div><!-- /bottom-wizard -->
                                 </form>
                             </div><!-- /Wizard container -->
@@ -485,10 +448,10 @@
         <li>© 2022 Sweetsica</li>
         <li><a href="https://zalo.me/0327350489" class="animated_link">Liên hệ tác giả</a></li>
         <li><a href="index_2.html" class="animated_link">Demo Slider</a></li>
-        <li><a href="index_3.html" class="animated_link">With UPLOAD</a></li>
-        <li><a href="index_4.html" class="animated_link"><With></With> Branch</a></li>
-        <li><a href="index_5.html" class="animated_link">Full Page View</a></li>
-        <li><a href="shortcodes.html" class="animated_link">Shortcodes</a></li>
+{{--        <li><a href="index_3.html" class="animated_link">With UPLOAD</a></li>--}}
+{{--        <li><a href="index_4.html" class="animated_link"><With></With> Branch</a></li>--}}
+{{--        <li><a href="index_5.html" class="animated_link">Full Page View</a></li>--}}
+{{--        <li><a href="shortcodes.html" class="animated_link">Shortcodes</a></li>--}}
     </ul>
 </div><!-- /add links -->
 

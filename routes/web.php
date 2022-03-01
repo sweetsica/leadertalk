@@ -17,4 +17,5 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::get('/',[\App\Http\Controllers\PageController::class, 'index'])->name('demo.pdf');
+Route::get('/',[\App\Http\Controllers\PageController::class, 'index'])->name('index');
+Route::post('/question/send',[\App\Http\Controllers\QuestionController::class, 'store'])->name('send.question');
