@@ -96,7 +96,7 @@
                                     <div id="progressbar"></div>
                                 </div><!-- /top-wizard -->
 
-                                <form name="example-1" id="wrapped" method="POST" action="{{route('send.question')}}">
+                                <form name="example-1" id="wrappedd" method="POST" action="{{route('send.question')}}">
                                     @csrf
                                     <input id="website" name="website" type="text" value=""><!-- Leave for security protection, read docs for details -->
                                     <div id="middle-wizard">
@@ -105,22 +105,22 @@
 
                                             <div class="form-group radio_questions">
                                                 <label>1. Marketing
-                                                    <input name="category" type="radio" value="My budget is under $500" class="icheck required">
+                                                    <input name="category" type="radio" value="Marketing" class="icheck required">
                                                 </label>
                                             </div>
                                             <div class="form-group radio_questions">
                                                 <label>2. Dịch vụ bán hàng
-                                                    <input name="category" type="radio" value="My budget is between $500 and $1000" class="icheck required">
+                                                    <input name="category" type="radio" value="Dịch vụ bán hàng" class="icheck required">
                                                 </label>
                                             </div>
                                             <div class="form-group radio_questions">
                                                 <label>3. Kế toán
-                                                    <input name="category" type="radio" value="My budget is between $1000 and $1500" class="icheck required">
+                                                    <input name="category" type="radio" value="Kế toán" class="icheck required">
                                                 </label>
                                             </div>
                                             <div class="form-group radio_questions">
                                                 <label>4. Khác
-                                                    <input name="category" type="radio" value="My budget is over $1500" class="icheck required">
+                                                    <input name="category" type="radio" value="Khác" class="icheck required">
                                                 </label>
                                             </div>
 

@@ -35,8 +35,8 @@ class QuestionController extends Controller
      */
     public function store(Request $request)
     {
-        Question::create($request->all());
-        return view('leadertalk');
+        $question = Question::create($request->all());
+        return view('answear',compact('question'));
     }
 
     /**
