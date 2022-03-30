@@ -8,13 +8,26 @@ use Illuminate\Http\Request;
 class QuestionController extends Controller
 {
     /**
+     * Dashboard after login
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function dashboard()
+    {
+        $infos['count_mkt'] = Question::where('category','1')->count();
+        $infos['count_dvbh'] = Question::where('category','2')->count();
+        $infos['count_kt'] = Question::where('category','3')->count();
+        $infos['count_other'] = Question::where('category','4')->count();
+        return view('dashboard',compact('infos'));
+    }
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        $infos = Question::latest()->take(35)->get();
+        return view('list_question',compact('infos'));
     }
 
     /**
@@ -36,7 +49,7 @@ class QuestionController extends Controller
     public function store(Request $request)
     {
         $question = Question::create($request->all());
-        return view('answear',compact('question'));
+        return view('thankyou');
     }
 
     /**
@@ -47,7 +60,8 @@ class QuestionController extends Controller
      */
     public function show($id)
     {
-        //
+        $infos = Question::where('id',$id)->first();
+        return view('answear',compact('infos'));
     }
 
     /**

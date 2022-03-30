@@ -40,7 +40,7 @@
 
 <header>
     <div id="logo_home">
-        <h1><a href="index.html" title="Quote">LeaderTalk - Lắng nghe, Trao đổi, Trả lời, Giải quyết</a></h1>
+        <h1><a href="{{route('index')}}" title="Quote">LeaderTalk - Lắng nghe, Trao đổi, Trả lời, Giải quyết</a></h1>
     </div>
 
     <a id="menu-button-mobile" class="cmn-toggle-switch cmn-toggle-switch__htx" href="javascript:void(0);"><span>Menu mobile</span></a>
@@ -55,7 +55,8 @@
 
 <div class="intro_txt animated fadeInUp">
     <h2>Chào mừng tới LeaderTalk Mastertran</h2>
-    <p>Nơi tổng hợp các ý kiến giúp các đồng chí Lãnh đạo - TP lắng nghe, trao đổi, trả lời, giải quyết những tâm tư, nguyện vọng chính đáng!</p>
+    <p>Nơi tổng hợp các ý kiến giúp các đồng chí Lãnh đạo - Trưởng bộ phân lắng nghe, trao đổi, trả lời một cách công tâm. Qua đó giải quyết những vướng mắc, tâm tư, nguyện vọng chính đáng!</p>
+    <p><i><b>"Vì một Mastertran đoàn kết. Một Việt Nam - nơi sức khoẻ người tiêu dùng được nâng tầm bởi thương hiệu Doppelherz!"</b></i></p>
 </div><!-- /intro_txt -->
 
 <video id="my-video" class="video" loop muted autoplay playsinline>
@@ -448,7 +449,7 @@
     <ul>
         <li>© 2022 Sweetsica</li>
         <li><a href="https://zalo.me/0327350489" class="animated_link">Liên hệ tác giả</a></li>
-        <li><a href="index_2.html" class="animated_link">Demo Slider</a></li>
+{{--        <li><a href="index_2.html" class="animated_link">Demo Slider</a></li>--}}
 {{--        <li><a href="index_3.html" class="animated_link">With UPLOAD</a></li>--}}
 {{--        <li><a href="index_4.html" class="animated_link"><With></With> Branch</a></li>--}}
 {{--        <li><a href="index_5.html" class="animated_link">Full Page View</a></li>--}}

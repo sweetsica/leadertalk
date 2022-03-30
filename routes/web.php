@@ -19,3 +19,16 @@ Route::get('/welcome', function () {
 
 Route::get('/',[\App\Http\Controllers\PageController::class, 'index'])->name('index');
 Route::post('/question/send',[\App\Http\Controllers\QuestionController::class, 'store'])->name('send.question');
+
+//Route::middleware(['auth'])->group(function (){
+//    Route::prefix('admin')->group(function (){
+//        Route::get('/login',[\App\Http\Controllers\UserController::class, 'login'])->name('user.login');
+//        Route::resource('/question',\App\Http\Controllers\QuestionController::class);
+//    });
+//});
+
+Route::prefix('admin')->group(function (){
+    Route::get('/login',[\App\Http\Controllers\UserController::class, 'login'])->name('user.login');
+    Route::get('/dashboard',[\App\Http\Controllers\QuestionController::class,'dashboard'])->name('dashboard');
+    Route::resource('/question',\App\Http\Controllers\QuestionController::class);
+});

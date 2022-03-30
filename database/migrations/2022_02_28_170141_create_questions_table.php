@@ -16,7 +16,7 @@ class CreateQuestionsTable extends Migration
         Schema::create('questions', function (Blueprint $table) {
             $table->id();
             $table->string('category')->nullable();
-            $table->string('addtional_info')->nullable();
+            $table->text('addtional_info')->nullable();
             $table->string('level_problem')->nullable();
             $table->boolean('solution')->nullable();
             $table->boolean('hide_info')->nullable();
@@ -24,6 +24,7 @@ class CreateQuestionsTable extends Migration
             $table->string('email')->nullable();
             $table->string('phone')->nullable();
             $table->string('department')->nullable();
+            $table->string('status')->default('Đang chờ xử lý');
             $table->timestamps();
         });
     }
