@@ -28,7 +28,7 @@ Route::post('/question/send',[\App\Http\Controllers\QuestionController::class, '
 //});
 
 Route::prefix('admin')->group(function (){
-    Route::get('/login',[\App\Http\Controllers\UserController::class, 'login'])->name('user.login');
+    Route::get('/',[\App\Http\Controllers\UserController::class, 'login'])->name('user.login');
     Route::get('/dashboard',[\App\Http\Controllers\QuestionController::class,'dashboard'])->name('dashboard');
     Route::resource('/question',\App\Http\Controllers\QuestionController::class);
 });
