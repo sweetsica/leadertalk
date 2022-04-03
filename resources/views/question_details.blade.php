@@ -1,8 +1,5 @@
 {{-- Extends layout --}}
 @extends('layout.default')
-
-
-
 {{-- Content --}}
 @section('content')
             <!-- row -->
@@ -316,7 +313,7 @@
 							</div>
 							<div class="col-xl-12">
 								<div class="card property-features">
-									<div class="card-header border-0 pb-0">	
+									<div class="card-header border-0 pb-0">
 										<h3 class="fs-20 text-black mb-0">Property Features</h3>
 									</div>
 									<div class="card-body">
@@ -343,5 +340,5 @@
 					</div>
 				</div>
             </div>
-			
-@endsection			
+
+@endsection

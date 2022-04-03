@@ -2,10 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Question;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+    public function login()
+    {
+        return view('login');
+    }
+
+    public function login_check(Request $request)
+    {
+        $infos = Question::latest()->take(35)->get();
+        return view('list_question',compact('infos'));
+    }
     /**
      * Display a listing of the resource.
      *

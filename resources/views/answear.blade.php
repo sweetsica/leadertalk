@@ -14,8 +14,8 @@
         ***********************************-->
     <div class="page-titles">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="javascript:void(0)">App</a></li>
-            <li class="breadcrumb-item active"><a href="javascript:void(0)">Profile</a></li>
+            <li class="breadcrumb-item"><a href="{{route('dashboard')}}">Danh sách</a></li>
+            <li class="breadcrumb-item active"><a href="{{route('question.index')}}">Câu hỏi</a></li>
         </ol>
     </div>
     <!-- row -->
@@ -34,24 +34,24 @@
                             <div class="profile-name px-3 pt-2">
                                 <h4 class="text-primary mb-0">
                                     @if(isset($infos->name))
-                                        {{$info->name}}
+                                        {{$infos->name}}
                                     @endif
                                 </h4>
                                 <p>
                                     @if(isset($infos->department))
-                                        {{$info->department}}
+                                        {{$infos->department}}
                                     @endif
                                 </p>
                             </div>
                             <div class="profile-email px-2 pt-2">
                                 <h4 class="text-muted mb-0">
                                     @if(isset($infos->email))
-                                        {{$info->email}}
+                                        {{$infos->email}}
                                     @endif
                                 </h4>
                                 <p>
                                     @if(isset($infos->phone))
-                                        {{$info->phone}}
+                                        {{$infos->phone}}
                                     @endif
                                 </p>
                             </div>
@@ -68,14 +68,13 @@
                     <div class="profile-statistics mb-5">
                         <div class="text-center">
                             <div class="mt-4">
-                                @if($infos->level_prolem==1)
+                                @if($infos->level_prolem='Bình thường')
                                     <a href="#" class="btn btn-success" data-toggle="modal" >{{$infos->level_problem}}</a>
-                                @elseif($infos->level_prolem==2)
+                                @elseif($infos->level_prolem='Quan trọng')
                                     <a href="#" class="btn btn-warning" data-toggle="modal" >{{$infos->level_problem}}</a>
                                 @else
                                     <a href="#" class="btn btn-danger" data-toggle="modal" >{{$infos->level_problem}}</a>
                                 @endif
-
                             </div>
                         </div>
                     </div>
@@ -99,7 +98,7 @@
                                     <div class="my-post-content pt-3">
                                         <div class="profile-uoloaded-post border-bottom-1 pb-5">
 {{--                                            <img src="{{asset('admin/images/profile/8.jpg')}}" alt="" class="img-fluid">--}}
-                                            <a class="post-title" href="post-details.html"><h3 class="text-black">Câu hỏi</h3></a>
+                                            <a class="post-title"><h3 class="text-black">Câu hỏi</h3></a>
                                             <p>{{$infos->addtional_info}}</p>
                                         </div>
                                     </div>
@@ -183,7 +182,9 @@
                                             <h4 class="text-primary">Trả lời</h4>
                                             <form>
                                                 <div class="form-row">
-                                                    {{$infos->solution}}
+                                                    @if(isset($infos->answear))
+                                                        {{$infos->answear}}
+                                                    @endif
                                                 </div>
                                             </form>
                                         </div>

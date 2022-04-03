@@ -82,18 +82,18 @@
                     <div class="row">
                         <aside class="col-xl-3 col-lg-4">
                             <h2>Để lại câu hỏi cho các bộ phận quản lý</h2>
-                            <p class="lead">An mei sadipscing dissentiet, eos ea partem viderer facilisi.</p>
+                            <p class="lead">Để nhận được câu trả lời chính xác nhất, vui lòng: </p>
                             <ul class="list_ok">
-                                <li>Delicata persecuti ei nec, et his minim omnium, aperiam placerat ea vis.</li>
-                                <li>Suavitate vituperatoribus pro ad, cum in quis propriae abhorreant.</li>
-                                <li>Aperiri deterruisset ei mea, sed cu laudem intellegat, eu mutat iuvaret voluptatum mei.</li>
+                                <li>Chọn đúng thông tin.</li>
+                                <li>Đưa ra câu hỏi ngắn gọn, súc tích.</li>
+                                <li>Để lại thông tin liên hệ nếu có thể.</li>
                             </ul>
                         </aside><!-- /aside -->
 
                         <div class="col-xl-9 col-lg-8">
                             <div id="wizard_container">
                                 <div id="top-wizard">
-                                    <strong>Progress</strong>
+                                    <strong>Tiến trình</strong>
                                     <div id="progressbar"></div>
                                 </div><!-- /top-wizard -->
 
@@ -142,13 +142,13 @@
 
                                                 <div class="col-lg-10">
                                                     <div class="form-group select">
-                                                        <label>Tự đánh giá mức độ khẩn cấp cho vấn đề: (1 bình thường - 3 nghiêm trọng)</label>
+                                                        <label>Tự đánh giá mức độ khẩn cấp cho vấn đề:</label>
                                                         <div class="styled-select">
                                                             <select class="required" name="level_problem">
                                                                 <option value="" selected>-Chọn-</option>
-                                                                <option value="Bình thường">1</option>
-                                                                <option value="Quan trọng">2</option>
-                                                                <option value="Nghiêm trọng">3</option>
+                                                                <option value="Bình thường">Bình thường</option>
+                                                                <option value="Quan trọng">Quan trọng</option>
+                                                                <option value="Nghiêm trọng">Nghiêm trọng</option>
                                                             </select>
                                                         </div>
                                                     </div><!-- /select-->
@@ -180,16 +180,16 @@
 
                                         <div class="submit step">
 
-                                            <h3 class="main_question"><strong>4/4</strong>Hoàn tất thông tin:</h3>
-                                            <p><i>*Nếu bạn chọn đăng ẩn danh, có thể bỏ qua bước này</i></p>
+                                            <h3 class="main_question"><strong>4/4</strong>Bạn có thể bỏ qua bước này:</h3>
+                                            <p><i>*Nếu bạn chọn đăng ẩn danh, có thể bỏ qua bước này. Trong trường hợp đóng góp ý kiến hoặc mong muốn nhận phản hồi, vui lòng để lại thông tin.</i></p>
                                             <div class="row">
 
                                                 <div class="col-sm-6">
                                                     <div class="form-group">
-                                                        <input type="text" name="lastname" class=" form-control" placeholder="Tên">
+                                                        <input type="text" name="name" class=" form-control" placeholder="Tên">
                                                     </div>
                                                     <div class="form-group">
-                                                        <input type="text" name="telephone" class=" form-control" placeholder="Số điện thoại">
+                                                        <input type="text" name="phone" class=" form-control" placeholder="Số điện thoại">
                                                     </div>
                                                 </div><!-- /col-sm-6 -->
 
@@ -198,15 +198,7 @@
                                                         <input type="email" name="email" class=" form-control" placeholder="Địa chỉ email">
                                                     </div>
                                                     <div class="form-group">
-                                                        <div class="styled-select">
-                                                            <select name="country">
-                                                                <option value="" selected>Thuộc bộ phận</option>
-                                                                <option value="Marketing">Marketing</option>
-                                                                <option value="Sale">Sale</option>
-                                                                <option value="Accountant">Accountant</option>
-                                                                <option value="Other">Khác</option>
-                                                            </select>
-                                                        </div>
+                                                        <input type="email" name="answear" class=" form-control" placeholder="Phương án đề xuất">
                                                     </div>
                                                 </div><!-- /col-sm-6 -->
                                             </div><!-- /row -->
@@ -334,7 +326,7 @@
     <ul>
         <li>© 2022 Sweetsica</li>
         <li><a href="https://zalo.me/0327350489" class="animated_link">Liên hệ tác giả</a></li>
-{{--        <li><a href="index_2.html" class="animated_link">Demo Slider</a></li>--}}
+        <li><a href="{{route('user.login')}}" class="animated_link">Bảng admin</a></li>
 {{--        <li><a href="index_3.html" class="animated_link">With UPLOAD</a></li>--}}
 {{--        <li><a href="index_4.html" class="animated_link"><With></With> Branch</a></li>--}}
 {{--        <li><a href="index_5.html" class="animated_link">Full Page View</a></li>--}}
@@ -347,18 +339,18 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Terms and conditions</h5>
+                <h5 class="modal-title">Điều khoản và quy định</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
-                <p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
-                <p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+                <p>Bằng việc đăng tải thông tin tại trang leadertalk.website. Tôi cam kết là thành viên, cộng tác, đối tác của Doppelherz Việt Nam và công ty Mastertran.</p>
+                <p>Tôi xin cam đoan những thông tin đã điền là đúng sự thật, mọi vấn đề phát sinh sẽ được tôi chịu trách nhiệm trước quy định của nhà nước cộng hoà xã hội chủ nghĩa Việt Nam và quy định của công ty Mastertran.</p>
+                <p>Việc tham gia sự kiện nội bộ leadertalk là hoàn toàn tự nguyện. Mọi thông tin cá nhân và các sự kiện liên quan sẽ được đảm bảo theo đúng yêu cầu.</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn_1" data-dismiss="modal">Close</button>
+                <button type="button" class="btn_1" data-dismiss="modal">Đóng</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->

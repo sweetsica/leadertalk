@@ -42,7 +42,7 @@
         Nav header start
     ***********************************-->
     <div class="nav-header">
-        <a href="index.html" class="brand-logo">
+        <a href="{{route('dashboard')}}" class="brand-logo">
             <img class="logo-abbr" src="{{asset('admin/images/logo.png')}}" alt="">
             <img class="logo-compact" src="{{asset('admin/images/logo-text.png')}}" alt="">
             <img class="brand-title" src="{{asset('admin/images/logo-text.png')}}" alt="">
@@ -738,7 +738,7 @@
                             <a class="nav-link" href="javascript:void(0)" role="button" data-toggle="dropdown">
                                 <img src="{{asset('admin/images/profile/17.jpg')}}" width="20" alt=""/>
                                 <div class="header-info">
-                                    <span class="text-black"><strong>Peter Parkur</strong></span>
+                                    <span class="text-black"><strong>Bảo Bảo</strong></span>
                                     <p class="fs-12 mb-0">Super Admin</p>
                                 </div>
                             </a>

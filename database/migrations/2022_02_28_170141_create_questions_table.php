@@ -14,11 +14,12 @@ class CreateQuestionsTable extends Migration
     public function up()
     {
         Schema::create('questions', function (Blueprint $table) {
-            $table->id();
+            $table->id()->unique() ;
             $table->string('category')->nullable();
             $table->text('addtional_info')->nullable();
             $table->string('level_problem')->nullable();
             $table->boolean('solution')->nullable();
+            $table->text('answear')->nullable();
             $table->boolean('hide_info')->nullable();
             $table->string('name')->nullable();
             $table->string('email')->nullable();

@@ -26,7 +26,13 @@ class QuestionController extends Controller
      */
     public function index()
     {
-        $infos = Question::latest()->take(35)->get();
+//        if($cate=='all'){
+//            $infos = Question::latest()->take(35)->sortByDesc('id')->get();
+//        }elseif($cate=='mkt'){
+//            dd($cate);
+//            $infos = Question::where('category','=',1)->latest()->take(35)->sortByDesc('id')->get();
+//        }
+        $infos = Question::take(35)->get()->sortByDesc('created_at');
         return view('list_question',compact('infos'));
     }
 
@@ -72,7 +78,8 @@ class QuestionController extends Controller
      */
     public function edit($id)
     {
-        //
+        $infos = Question::where('id',$id)->first();
+        return view('question_edit',compact('infos'));
     }
 
     /**
@@ -84,7 +91,11 @@ class QuestionController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $question = Question::findOrFail($id);
+        $question['answear'] = $request->answear;
+        $question['status'] = $request->status;
+        $question->save();
+        return redirect()->route('question.show',$id);
     }
 
     /**

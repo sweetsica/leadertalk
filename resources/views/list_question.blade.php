@@ -14,8 +14,8 @@
 @section('content-body')
     <div class="page-titles">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="javascript:void(0)">Danh sách</a></li>
-            <li class="breadcrumb-item active"><a href="javascript:void(0)">Câu hỏi</a></li>
+            <li class="breadcrumb-item"><a href="{{route('dashboard')}}">Danh sách</a></li>
+            <li class="breadcrumb-item active"><a href="{{route('question.index')}}">Câu hỏi</a></li>
         </ol>
     </div>
     <!-- row -->
@@ -31,10 +31,11 @@
                             <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Vấn đề thuộc phòng ban</th>
-                                <th>Nội dung câu hỏi</th>
-                                <th>Mức độ nghiêm trọng</th>
-                                <th>Ngày tạo yêu cầu</th>
+                                <th style="text-align: center">Vấn đề thuộc phòng ban</th>
+                                <th style="text-align: center">Nội dung câu hỏi</th>
+                                <th style="text-align: center">Mức độ nghiêm trọng</th>
+                                <th style="text-align: center">Trạng thái</th>
+                                <th style="text-align: center">Ngày tạo yêu cầu</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -42,8 +43,9 @@
                                 <tr>
                                     <td style="padding-left: 15px">{{$info->id}}</td>
                                     <td style="text-align: center"><a class="fs-14 text-primary font-w500" href="{{route('question.show',$info->id)}}">{{$info->category}}</a></td>
-                                    <td style="padding-left: 15px">{{$info->addtional_info}}</td>
-                                    <td style="text-align: center">{{$info->level_problem}}</td>
+                                    <td style="padding-left: 15px">{{mb_strimwidth($info->addtional_info,0,50, "...")}}</td>
+                                    <td style="text-align: center"><a class="fs-14 text-primary font-w500" href="{{route('question.edit',$info->id)}}">{{$info->level_problem}}</a></td>
+                                    <td style="text-align: center">{{$info->status}}</td>
                                     <td style="text-align: center">{{$info->created_at->format('d-m-Y')}}</td>
                                 </tr>
                             @endforeach
@@ -54,6 +56,7 @@
                                 <th style="text-align: center">Phòng ban</th>
                                 <th style="text-align: center">Nội dung câu hỏi</th>
                                 <th style="text-align: center">Mức độ nghiêm trọng</th>
+                                <th style="text-align: center">Trạng thái</th>
                                 <th style="text-align: center">Ngày tạo</th>
                             </tr>
                             </tfoot>

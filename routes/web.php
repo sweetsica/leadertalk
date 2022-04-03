@@ -28,7 +28,10 @@ Route::post('/question/send',[\App\Http\Controllers\QuestionController::class, '
 //});
 
 Route::prefix('admin')->group(function (){
-    Route::get('/',[\App\Http\Controllers\UserController::class, 'login'])->name('user.login');
+    Route::get('/login',[\App\Http\Controllers\UserController::class, 'login'])->name('user.login');
+    Route::post('/login_check',[\App\Http\Controllers\UserController::class, 'login_check'])->name('login.check');
     Route::get('/dashboard',[\App\Http\Controllers\QuestionController::class,'dashboard'])->name('dashboard');
     Route::resource('/question',\App\Http\Controllers\QuestionController::class);
+//    Route::resource('/question',\App\Http\Controllers\QuestionController::class)->except('index');
+//    Route::get('/question/{cate}', [\App\Http\Controllers\QuestionController::class,'index'])->name('question.index');
 });
