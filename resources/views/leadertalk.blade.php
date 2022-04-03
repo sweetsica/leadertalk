@@ -235,14 +235,14 @@
                                 <div class="col-md-6">
                                     <div class="box_feat" id="icon_1">
                                         <span></span>
-                                        <h3>Responsive site design</h3>
-                                        <p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, ne mel.</p>
+                                        <h3>Việc tuyển dụng nhân viên bán hàng có thuộc phòng Digital Marketing?</h3>
+                                        <p>Không, nhưng sẽ được phòng DM hỗ trợ bằng fanpage và website.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="box_feat" id="icon_2">
                                         <span></span>
-                                        <h3>Web site check</h3>
+                                        <h3>Website tuyển dụng.....</h3>
                                         <p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, ne mel.</p>
                                     </div>
                                 </div>
@@ -250,13 +250,13 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="box_feat" id="icon_3">
-                                        <h3>Email campaigns</h3>
+                                        <h3>Thông báo thông tin sản phẩm mới....</h3>
                                         <p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, ne mel.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="box_feat" id="icon_4">
-                                        <h3>Seo optimization</h3>
+                                        <h3>Tăng doanh số....</h3>
                                         <p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, ne mel.</p>
                                     </div>
                                 </div>
